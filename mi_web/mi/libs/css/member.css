@@ -1,0 +1,80 @@
+/*
+ * For Login
+ * login.html
+ */
+
+.page__background {
+  background-color: #efefef;
+}
+
+.login-form {
+  text-align: center;
+  width: 90%;
+  margin: 25px auto 0;
+}
+
+input[type=id], input[type=password] {
+  display: block;
+  border: 0;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  margin-bottom: 12px;
+}
+
+.login-button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.forgot-password {
+  display: block;
+  margin: 8px auto 0 auto;
+  font-size: 14px;
+}
+
+.login-memory {
+  color: #000;
+  font-size: 14px;
+  margin-left: -10px;
+  float: left;
+}
+
+.signup {
+  color: #000;
+  font-size: 14px;
+  margin-right: -10px;
+  float: right;
+}
+
+.button--quiet {
+  border: 1000px;
+}
+
+/*
+ * For Login Alert
+ * login_alert.html
+ */
+
+.info-form {
+  text-align: center;
+  width: 90%;
+  margin: 60px auto 0;
+}
+
+.sub-button {
+  background-color: #fff;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+}

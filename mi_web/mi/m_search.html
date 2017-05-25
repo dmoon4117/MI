@@ -1,0 +1,120 @@
+<?php
+	include("start.php");
+?>
+
+<style type="text/css">
+	.content
+	{
+   		margin: 0 auto;
+   		width: 1200px;
+	}	
+	.content h1{
+		margin-bottom: 40px;
+		text-align: center
+	}
+	.search{
+		width: 300px;
+		margin: 0 auto;
+		text-align: center
+		border: none;
+	}
+	#shape,#color,#type,#name,#camera{
+		width:100%;
+		font-size: 18px;
+		border: 0;
+	}
+	#camera{
+		padding-top: 10px;
+		text-align: center;
+	}
+</style>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+	<!-- 전체 div -->
+	<div class="content">
+		<h1>MI</h1>
+		<!-- 검색하는 기준 div -->
+		<div class="search">
+			<form action="m_search.php" method="post">
+			<div id="shape">
+				<span>
+				모양 : 
+				</span>
+
+				<input list="shapelist" name=shape>
+				<datalist id="shapelist">
+				   <option value="원형">
+				   <option value="타원형">
+				   <option value="반원형">
+				</datalist> 
+				</input>
+				<br>
+			</div>
+			<div id="color">
+				<span>
+				색상 : 
+				</span>
+				
+				<input list="colorlist" name=color>
+				<datalist id="colorlist">
+				   <option value="하양">
+				   <option value="빨강">
+				   <option value="노랑">
+				</datalist> 
+				</input>
+				<br>
+			</div>
+			<div id="type">
+				<span>
+				제형 : 
+				</span>
+				<input list="typelist" name=type>
+
+				<datalist id="typelist">
+				   <option value="정제류">
+				   <option value="경질캡슐">
+				   <option value="연질캡슐">
+				</datalist> 	
+				<br>
+			</div>
+			<div id="name">
+				<span>
+				이름 : 
+				</span>
+				<!-- 위의 정보를 통한 검색실시 -->
+				<input type="text" name="m_name">				
+				
+				<input type="submit" value="검색">
+				
+			</div>
+			</form>
+			<form action="start.php" method="post">
+			<div id="camera">
+				<!-- 카메라 기능과 연동하는 버튼으로 교체 해야함 -->
+				<input type="submit" value="카메라">
+			</div>		
+			</form>
+		</div>
+
+		<!-- 위의 정보를 통해 유사 약품들 또는 해당하는 약품들의 약품명을 찾아낸 뒤 그 약품들의 목록을 출력 -->
+		<div class="result_list" type=hidden>
+
+			<? 
+			 showresult();
+			
+			 ?>
+
+		</div>
+		<div class ="result_list_string">
+
+		</div>
+	</div>
+	<input type="hidden" value=<? echo $tmp[0] ?>>
+	</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="libs/css/onsenui.css">
+    <link rel="stylesheet" href="libs/css/onsen-css-components.css">
+    <link rel="stylesheet" href="libs/css/functions.css">
+    <script src="libs/js/onsenui.min.js"></script>
+</head>
+
+<body>
+  <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button>
+                        <a href="javascript:history.go(-1)" style="color:#eb5e2f;"><ons-icon icon="ion-arrow-left-c" style="vertical-align: -4px; font-size: 28px;"></ons-icon></a>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">M.I.</div>
+                <div class="right">
+                </div>
+            </ons-toolbar>
+        <div class="header-bar" style="margin-top:-15px; padding-top:15px;padding-bottom:0px;">
+            <div class="select-list">
+
+                <h3 class="search-title">
+                        <ons-icon icon="ion-android-radio-button-off" style="color:#f20;line-height:0px;font-size: 16px;padding-right:5px;"></ons-icon>
+                        약 정보로 찾기
+                    </h3>
+                
+                <form method="post" action="m_search.php"> 
+                <input type="search" value="" name="search" placeholder="약 이름, 제조사, 성분 등" class="search-input">
+                <button class="button--cta" style="height:36px;">
+                    <ons-icon icon="ion-search" style="line-height:5px;font-size: 24px;"></ons-icon>
+                </button>
+                </form>
+            </div>
+        </div>
+        <form action="list.html" method="post">   
+        <div class="floating-bar">
+            <div class="select-list">
+                <h3 class="search-title" style="padding-top:10px;">약 모양 선택</h3>
+                <div class="custom-controls-stacked">
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="원형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/circle_icon.png" height="17px;"> 원형</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="타원형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/ellipse_icon.png" height="17px;"> 타원형</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="반원형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/semicircle_icon.png" height="17px;"> 반원형</span>
+                    </label>
+                    <br>
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="삼각형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/semicircle_icon.png" height="17px;"> 삼각형</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="사각형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/square_icon.png" height="17px;"> 사각형</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="마름모형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/rhombus_icon.png" height="17px;"> 마름모형</span>
+                    </label>
+                    <br>
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="장방형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/rectangle_icon.png" height="17px;"> 장방형</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="오각형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/pentagon_icon.png" height="17px;"> 오각형</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input" value="육각형">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                <img src="./icon/hexagon_icon.png" height="17px;"> 육각형</span>
+                    </label>
+                </div>
+            </div>
+            <div class="floating-bar">
+                <div class="select-list">
+                    <h3 class="search-title">약 색상 선택</h3>
+                    <div class="custom-controls-stacked">
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="하양">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">
+                <ons-icon icon="ion-ios-circle-outline" style="color:#333;line-height:0px;font-size: 16px;"></ons-icon>
+하양</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="노랑">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">
+                <ons-icon icon="ion-record" style="color:#ffe400;line-height:0px;font-size: 16px;"></ons-icon>
+              노랑</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="주황">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">
+                <ons-icon icon="ion-record" style="color:#ff7200;line-height:0px;font-size: 16px;"></ons-icon>
+                주황</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="분홍">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">
+                <ons-icon icon="ion-record" style="color:#ff32ab;line-height:0px;font-size: 16px;"></ons-icon>
+                분홍</span>
+                        </label>
+                        <br>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="빨강">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#ed1312;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">빨강</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="갈색">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#924d14;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">갈색</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="연두">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#7fc620;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">연두</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="초록">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#14862f;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">초록</span>
+                        </label>
+                        <br>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="청록">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#08c1b9;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">청록</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="파랑">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#0191d8;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">파랑</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="남색">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#314cb3;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">남색</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="자주">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#b623cc;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">자주</span>
+                        </label>
+                        <br>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="보라">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#7329c6;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">보라</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input" value="회색">
+                            <span class="custom-control-indicator"></span>
+                            <ons-icon icon="ion-record" style="color:#959595;line-height:0px;font-size: 16px;"></ons-icon>
+                            <span class="custom-control-description">회색</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="floating-bar">
+                    <div class="select-list">
+                        <h3 class="search-title">약 제형 선택</h3>
+                        <div class="custom-controls-stacked">
+                            <label class="custom-control custom-radio">
+                                <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input" value="정제류">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">
+                <img src="./icon/wjdwp_icon.png" height="17px;"> 정제류</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input" value="경질캡슐">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">
+                <img src="./icon/rudwlf_icon.png" height="17px;"> 경질캡슐</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input" value="연질캡슐">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">
+                <img src="./icon/duswlf_icon.png" height="17px;"> 연질캡슐</span>
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" class="search-button button button—large" value="검색하기" style="font-size: 17px;
+    font-weight: 500;
+    line-height: 36px;
+    padding: 4px 12px;
+    display: block;
+    width: 90%;
+    text-align: center;">
+                    </form>
+                    <div class="footer">
+                        <p align="center" class="small" style="font-weight:300;">© KU <strong>M.I.</strong> All Rights Reserved.</p>
+                    </div>
+    </ons-page>
+</body>
+
+</html>

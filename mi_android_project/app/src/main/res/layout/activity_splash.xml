@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f9f9f9"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="M.I."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:paddingTop="150dp" />
+
+    <TextView
+        android:text="Medicine Identifier"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="ver 1.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/textView3"
+        android:textSize="30sp"
+        android:paddingTop="60dp"
+        />
+
+</LinearLayout>
